@@ -1,0 +1,7 @@
+# Local prep (+ optional local smoke tests)
+librosa>=0.10.0
+soundfile>=0.12.0
+numpy>=1.24.0
+tqdm>=4.66.0
+jiwer>=3.0.0
+python-dotenv>=1.0.0
