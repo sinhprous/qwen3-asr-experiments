@@ -1,0 +1,54 @@
+{
+  "kind": "torch_profile",
+  "backend": "vllm",
+  "model": "Qwen/Qwen3-ASR-1.7B",
+  "profile_streams": 256,
+  "output_dir": "/vol/checkpoints/loadtest_vllm_torch_profile_20261013_071106",
+  "environment": {
+    "gpu_model": "NVIDIA L4",
+    "gpu_memory_gb": 22.06,
+    "cpu": "unknown",
+    "cpu_count": 17,
+    "ram_gb": 339.6,
+    "cuda_version": "12.8",
+    "nvidia_driver": "610.57.04",
+    "pytorch_version": "2.9.1+cu128",
+    "inference_framework": "qwen-asr (Qwen3ASRModel.LLM / vLLM)",
+    "precision": "bfloat16",
+    "device": "cuda:0",
+    "modal_gpu_request": "L4",
+    "backend": "vllm",
+    "attn_implementation": "vllm",
+    "gpu_memory_utilization": 0.9,
+    "max_inference_batch_size": -1,
+    "max_new_tokens": 512,
+    "max_model_len": 8192,
+    "preload_audio": true,
+    "preload_n": 256,
+    "preload_unique": 256,
+    "preload_mib": 102.9462890625,
+    "preload_sec": 15.555390906
+  },
+  "profile": {
+    "method": "vllm.start_profile",
+    "streams": 256,
+    "total_audio_sec": 1686.672,
+    "proc_sec": 4.464498328000019,
+    "wall_sec": 56.67345730399998,
+    "throughput_audio_s_per_s": 377.7965352616866,
+    "profile_dir": "/vol/checkpoints/loadtest_vllm_torch_profile_20261013_071106/traces",
+    "artifacts": [
+      {
+        "path": "/vol/checkpoints/loadtest_vllm_torch_profile_20261013_071106/traces/1791875511566173111-rank-0.1791875659567925553.pt.trace.json.gz",
+        "relpath": "1791875511566173111-rank-0.1791875659567925553.pt.trace.json.gz",
+        "bytes": 22127631
+      },
+      {
+        "path": "/vol/checkpoints/loadtest_vllm_torch_profile_20261013_071106/traces/profiler_out_0.txt",
+        "relpath": "profiler_out_0.txt",
+        "bytes": 20651
+      }
+    ],
+    "vllm_profiler_dir_env": "/vol/checkpoints/loadtest_vllm_torch_profile_20261013_071106/traces"
+  }
+}

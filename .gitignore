@@ -1,0 +1,14 @@
+data_ms_en/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+*.egg-info/
+.env
+inference_baseline_summary.json
+loadtest_baseline_summary.json
+loadtest_cpu_prep_profile.json
+loadtest_torch_profile_summary.json
+vllm_torch_profile/
+wer_recompute_punct/
